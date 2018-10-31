@@ -1,4 +1,4 @@
-constexpr修饰符会验证变量是否是常量表达式
+constexpr修饰符会验证变量是否是常量表达式，不是就直接报错
 
 int size()
 {
