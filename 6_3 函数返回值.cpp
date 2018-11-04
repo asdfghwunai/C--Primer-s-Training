@@ -13,6 +13,13 @@ string &manip()     //返回值是&
 
 }
 
+左值引用返回
+char &get_val(string &str,string::size_type ix);
+const左值引用返回
+const char &get_val(string &str,string::size_type ix);
+防止
+get_val(s,0)='A';
+
 用尾置返回类型吧，多方便
 int (*func(int i)) [10] //我就理解错了
 等价于
