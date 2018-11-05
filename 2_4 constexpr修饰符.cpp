@@ -2,6 +2,14 @@ https://blog.csdn.net/zhaojia92/article/details/50831436
 constexpr修饰符会验证变量是否是常量表达式，不是就直接报错
 只有编译期就能确定值得才叫常量表达式
 
+//constexpr修饰指针本身
+constexpr int *p=nullptr;         //修饰p
+const int i=42;   //常量表达式
+constexpr const int *p=nullptr;  //修饰p
+
+
+
+//函数
 int size()
 {
 	int a = 1;
