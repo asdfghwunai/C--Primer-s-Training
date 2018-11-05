@@ -1,4 +1,6 @@
+https://blog.csdn.net/zhaojia92/article/details/50831436
 constexpr修饰符会验证变量是否是常量表达式，不是就直接报错
+只有编译期就能确定值得才叫常量表达式
 
 int size()
 {
