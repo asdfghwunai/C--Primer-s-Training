@@ -6,4 +6,6 @@ this是隐藏的，this是一个const指针
 把成员函数定义为const的话，this指针变为 const Sales_data * const this
 const成员函数声明和定义都要有const标志
 
+------istream不能拷贝,所以才只能用&，因为对象可更改，所以才不是const------
+  istream &read(istream &is, Scales_data &item);
 
