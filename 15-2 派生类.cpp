@@ -26,3 +26,8 @@ B *b = &a; //xxx
 B b;
 A *a = &b;
 B *b = a; // xxx，编译器只能编译时检查正常不，所以判断为错误。如果基类又虚函数，可以dynacmic_cast启动运行时检查；或者觉得肯定正常可以直接用static_cast强转
+
+基类和派生类对象不支持类型转换，就是和我们期望的不一样
+B b;
+A a(b); // 调用A::A(const A&)构造函数
+a = b; //调用A::operator =(const A&)
